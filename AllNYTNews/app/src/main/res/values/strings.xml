@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">All NYT News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Server">http://api.nytimes.com</string>
+    <string name="getMostpopular_url">/svc/mostpopular/v2/mostviewed/all-sections/1.json?api-key=</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_margin8"
+            android:layout_marginTop="@dimen/dimen_margin8"
+            android:layout_marginBottom="@dimen/dimen_margin8"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/imagecourselayout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/squarerect"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/img_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_margin8"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dimen_margin8"
+                    android:paddingBottom="4dp">
+
+                    <com.util.TypefacedTextView
+                        android:id="@+id/text_content"
+                        style="@style/style_text_default_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/img_arrow"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:paddingRight="@dimen/dimen_paddingOverallLeftRight"
+                        android:text="Supporters of the Democratic candidate Jon Ossaff after his  death of his son" />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <com.util.TypefacedTextViewLight
+                    android:id="@+id/text_provider"
+                    style="@style/style_text_xsmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_margin8"
+                    android:layout_marginRight="@dimen/dimen_margin8"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="by David Leonhardt and Stuart Robin Hood and co and" />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="@dimen/dimen_margin8"
+                   android:layout_marginTop="@dimen/dimen_margin4">
+
+                <com.util.TypefacedTextViewLight
+                    android:id="@+id/text_providerby"
+                    style="@style/style_text_xxsmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thompson" />
+
+                   <com.util.TypefacedTextViewLight
+                       android:id="@+id/text_publishedate"
+                       style="@style/style_text_xsmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentEnd="true"
+                       android:layout_alignParentRight="true"
+                       android:drawablePadding="@dimen/dimen_margin8"
+                       android:drawableLeft="@mipmap/ic_calendar_48"
+                       android:text="2017-06-23" />
+               </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dimen_paddingOverallLeftRight"
+            android:layout_marginRight="@dimen/dimen_paddingOverallLeftRight"
+            android:background="@color/color_seperator" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_seperatordark" />
+
+        <View
+            android:id="@+id/seperator_list"
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/color_seperator" />
+
+
+    </LinearLayout>
+</LinearLayout>
